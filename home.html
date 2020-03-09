@@ -1,0 +1,61 @@
+<!--Your HTML code here-->
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale = 1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="MyJavascript.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <title> Home </title>
+</head>
+<body>
+    <div style="left:0px; width:0px; height:0px">
+        <img src="D:\DIS\MVC_JavaScript_JQuery_Chart_Ajax-master\Assignment_LookandFeel\img\flag_usa.png" alt="USA_FLAG" height="65" width="100" />
+    </div>
+    <h2 style="text-align:center;">
+        ABOUT INDIANA STATE
+    </h2>
+
+
+    <div class="center" id="myCenter" style="font-family:sans-serif; align-content:center">
+
+
+        <a href="home.html"> Home </a>
+        <a href="crash_data.html#crash"> Car Crash Data </a>
+        <a href="crash_data.html#vis"> Visualization </a>
+        <a href="about_us.html"> About Us</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+
+    </div>
+
+    <div class="para">
+        <p>
+           Indiana is a U.S. state in the Midwestern and Great Lakes regions of North America. Indiana is the 38th-largest by area and the 17th-most populous of the 50 United States. Its capital and largest city is Indianapolis. Indiana was admitted to the United States as the 19th U.S. state on December 11, 1816. Indiana borders Lake Michigan to the northwest, Michigan to the north, Ohio to the east, Kentucky to the south and southeast, and Illinois to the west.
+
+			Before becoming a territory, various indigenous peoples and Native Americans inhabited Indiana for thousands of years. Since its founding as a territory, settlement patterns in Indiana have reflected regional cultural segmentation present in the Eastern United States; the state's northernmost tier was settled primarily by people from New England and New York, Central Indiana by migrants from the Mid-Atlantic states and from adjacent Ohio, and Southern Indiana by settlers from the Southern states, particularly Kentucky and Tennessee.
+
+			Indiana has a diverse economy with a gross state product of $359.12 billion in 2017. Indiana has several metropolitan areas with populations greater than 100,000 and a number of smaller industrial cities and towns. Indiana is home to professional sports teams, including the NFL's Indianapolis Colts and the NBA's Indiana Pacers, and hosts several notable athletic events, including the Indianapolis 500.
+        </p>
+    </div>
+	<div>
+	<img src="D:\DIS\MVC_JavaScript_JQuery_Chart_Ajax-master\Assignment_LookandFeel\img\map.png" alt="Map" align="centre" height="300" width="300">
+	</div>
+	
+    <script>
+        function myFunction() {
+            var a = document.getElementById("myCenter");
+            if (a.className === "center") {
+                a.className += " responsive";
+            } else {
+                a.className = "center";
+            }
+        }
+    </script>
+
+</body>
+</html>
+

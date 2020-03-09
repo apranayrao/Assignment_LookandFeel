@@ -1,0 +1,418 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Crash Related Data & Visualization</title>
+    <link rel="stylesheet" href="D:\DIS\MVC_JavaScript_JQuery_Chart_Ajax-master\Assignment_LookandFeel\css\SIMStyles.css">
+    
+</head>
+<body>
+    <p>
+        <div style="left:0px; width:0px; height:0px">
+            <img src="D:\DIS\MVC_JavaScript_JQuery_Chart_Ajax-master\Assignment_LookandFeel\img\flag_usa.png" alt="USA_FLAG" height="40" width="60" />
+        </div>
+        <br /><br />
+    </p>
+    <p>
+        <div class="center" id="myCenter" style="font-family:sans-serif; align-content:center">
+
+        <a href="home.html"> Home </a>
+        <a href="crash_data.html#TurnAroundModel"> Car Crash Data </a>
+        <a href="crash_data.html#RestartModel"> Visualization </a>
+        <a href="about_us.html"> About Us </a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+
+
+        </div>
+    </p>
+    <div id="intro" style="list-style-type: none;">
+        <li class="SIM">
+            <a href="#School Improvement Models">
+                <h2 style="margin-bottom:5px;margin-top:5px; text-align:center">
+                    Crash Data Obtained from data.gov
+                </h2>
+            </a>
+        </li>
+
+
+    </div>
+
+    <p style="margin-left:30px">
+A traffic collision, also called a motor vehicle collision (MVC) among other terms, occurs when a vehicle collides with another vehicle, pedestrian, animal, road debris, or other stationary obstruction, such as a tree, pole or building. Traffic collisions often result in injury, disability, death, and property damage as well as financial costs to both society and the individuals involved.
+
+A number of factors contribute to the risk of collisions, including vehicle design, speed of operation, road design, road environment, driving skills, impairment due to alcohol or drugs, and behavior, notably distracted driving, speeding and street racing.
+
+In 2013, 54 million people worldwide sustained injuries from traffic collisions. This resulted in 1.4 million deaths in 2013, up from 1.1 million deaths in 1990. About 68,000 of these occurred in children less than five years old.Almost all high-income countries have decreasing death rates, while the majority of low-income countries have increasing death rates due to traffic collisions. Middle-income countries have the highest rate with 20 deaths per 100,000 inhabitants, accounting for 80% of all road fatalities with 52% of all vehicles. While the death rate in Africa is the highest (24.1 per 100,000 inhabitants), the lowest rate is to be found in Europe (10.3 per 100,000 inhabitants).
+    </p>
+    <p style="margin-left:30px">
+        We are displaying the car crash data in Monroe County, Indiana. Monroe County is a county in the U.S. state of Indiana.
+    </p>
+
+    </div>
+    <div id="crash" style="margin-top:20px;list-style-type: none;">
+        <li>
+            <a href="#crash">
+                <h3 class="crashTitle">
+                    1. Car Crash Data
+                </h3>
+            </a>
+        </li>
+    </div>
+
+    <div id="TurnAroundModel_intro" style="margin-left:30px">
+        <h3 class="table-title"> Car Crash Data</h3>
+        <table class="myTable">
+            <tr>
+                <th>Master Record Number</th>
+                <th>Year</th>
+                <th>Month</th>
+                <th>Day</th>
+                <th>Weekend?</th>
+				<th>Hour</th>
+				<th>Collision Type</th>
+				<th>Injury Type</th>
+				<th>Primary Factor</th>
+				<th>Reported_Location</th>
+				<th>Latitude</th>
+				<th>Longitude</th>
+            </tr>
+            <tr>
+                <td>902363382</td>
+                <td>2015</td>
+                <td>1</td>
+                <td>5</td>
+                <td>Weekday</td>
+				<td>0</td>
+				<td>2-Car</td>
+				<td>No injury/unknown</td>
+				<td>OTHER (DRIVER) - EXPLAIN IN NARRATIVE</td>
+				<td>1ST & FESS</td>
+				<td>39.15920668</td>
+				<td>-86.52587356</td>
+
+            </tr>
+            <tr>
+                <td>902364268</td>
+                <td>2015</td>
+                <td>1</td>
+                <td>6</td>
+                <td>Weekday</td>
+				<td>1500</td>
+				<td>2-Car</td>
+				<td>No injury/unknown</td>
+				<td>FOLLOWING TOO CLOSELY</td>
+				<td>2ND & COLLEGE</td>
+				<td>39.16144</td>
+				<td>-86.534848</td>
+
+            </tr>
+            <tr>
+                <td>902364412</td>
+                <td>2015</td>
+                <td>1</td>
+                <td>6</td>
+                <td>Weekend</td>
+				<td>2300</td>
+				<td>2-Car</td>
+				<td>Non-incapacitating</td>
+				<td>DISREGARD SIGNAL/REG SIGN</td>
+				<td>BASSWOOD & BLOOMFIELD</td>
+				<td>39.14978027</td>
+				<td>-86.56889006</td>
+            </tr>
+			
+            <tr>
+                <td>902364551</td>
+                <td>2015</td>
+                <td>1</td>
+                <td>7</td>
+                <td>Weekend</td>
+				<td>900</td>
+				<td>2-Car</td>
+				<td>Non-incapacitating</td>
+				<td>FAILURE TO YIELD RIGHT OF WAY</td>
+				<td>GATES & JACOBS</td>
+				<td>39.165655</td>
+				<td>-86.57595635</td>
+            </tr>
+			
+			<tr>
+                <td>902364615</td>
+                <td>2015</td>
+                <td>1</td>
+                <td>7</td>
+                <td>Weekend</td>
+				<td>1100</td>
+				<td>2-Car</td>
+				<td>No injury/unknown</td>
+				<td>FAILURE TO YIELD RIGHT OF WAY</td>
+				<td>W 3RD</td>
+				<td>39.164848</td>
+				<td>-86.57962482</td>
+            </tr>
+			
+			<tr>
+                <td>902364664</td>
+                <td>2015</td>
+                <td>1</td>
+                <td>6</td>
+                <td>Weekday</td>
+				<td>1800</td>
+				<td>2-Car</td>
+				<td>No injury/unknown</td>
+				<td>FAILURE TO YIELD RIGHT OF WAY</td>
+				<td>BURKS & WALNUT</td>
+				<td>39.12666969</td>
+				<td>-86.53136998</td>
+            </tr>
+			
+			<tr>
+                <td>902364682</td>
+                <td>2015</td>
+                <td>1</td>
+                <td>6</td>
+                <td>Weekday</td>
+				<td>1200</td>
+				<td>2-Car</td>
+				<td>No injury/unknown</td>
+				<td>DRIVER DISTRACTED - EXPLAIN IN NARRATIVE</td>
+				<td>SOUTH CURRY PIKE LOT 71</td>
+				<td>39.150825</td>
+				<td>-86.584899</td>
+            </tr>
+			
+			<tr>
+                <td>902364683</td>
+                <td>2015</td>
+                <td>1</td>
+                <td>6</td>
+                <td>Weekday</td>
+				<td>1400</td>
+				<td>1-Car</td>
+				<td>Incapacitating</td>
+				<td>ENGINE FAILURE OR DEFECTIVE</td>
+				<td>NORTH LOUDEN RD</td>
+				<td>39.19927216</td>
+				<td>-86.63702393</td>
+            </tr>
+			
+			<tr>
+                <td>902364714</td>
+                <td>2015</td>
+                <td>1</td>
+                <td>7</td>
+                <td>Weekend</td>
+				<td>1400</td>
+				<td>2-Car</td>
+				<td>No injury/unknown</td>
+				<td>FOLLOWING TOO CLOSELY</td>
+				<td>LIBERTY & W 3RD</td>
+				<td>39.16461021</td>
+				<td>-86.57913007</td>
+            </tr>
+			
+			<tr>
+
+<td>902364756</td>
+<td>2015</td>
+<td>1</td>
+<td>7</td>
+<td>Weekend</td>
+<td>1600</td>
+<td>1-Car</td>
+<td>No injury/unknown</td>
+<td>RAN OFF ROAD RIGHT</td>
+<td>PATTERSON & W 3RD</td>
+<td>39.16344009</td>
+<td>-86.55128002</td>
+</tr>
+
+<tr>
+<td>902364761</td>
+<td>2015</td>
+<td>1</td>
+<td>7</td>
+<td>Weekend</td>
+<td>1500</td>
+<td>2-Car</td>
+<td>No injury/unknown</td>
+<td>UNSAFE BACKING</td>
+<td>S LIBERTY</td>
+<td>39.145264</td>
+<td>-86.577616</td>
+</tr>
+
+<tr>
+<td>902364764</td>
+<td>2015</td>
+<td>1</td>
+<td>7</td>
+<td>Weekend</td>
+<td>1600</td>
+<td>2-Car</td>
+<td>No injury/unknown</td>
+<td>FAILURE TO YIELD RIGHT OF WAY</td>
+<td>E WINSLOW & S HIGHLAND</td>
+<td>39.136048</td>
+<td>-86.518496</td>
+</tr>
+
+
+<tr>
+<td>902364822</td>
+<td>2015</td>
+<td>1</td>
+<td>7</td>
+<td>Weekend</td>
+<td>1700</td>
+<td>1-Car</td>
+<td>No injury/unknown</td>
+<td>UNSAFE BACKING</td>
+<td>E KIRKWOOD</td>
+<td>39.16664</td>
+<td>-86.53070106</td>
+</tr>
+
+<tr>
+<td>902365038</td>
+<td>2015</td>
+<td>1</td>
+<td>7</td>
+<td>Weekend</td>
+<td>1800</td>
+<td>1-Car</td>
+<td>No injury/unknown</td>
+<td>RAN OFF ROAD RIGHT</td>
+<td>HEATHERWOOD & LEONARD SPRINGS</td>
+<td>39.12678972</td>
+<td>-86.58258006</td>
+</tr>
+
+<tr>
+<td>902365063</td>
+<td>2015</td>
+<td>1</td>
+<td>7</td>
+<td>Weekend</td>
+<td>1300</td>
+<td>3+Cars</td>
+<td>Incapacitating</td>
+<td>DISREGARD SIGNAL/REG SIGN</td>
+<td>ROGERS & W PATTERSON</td>
+<td>39.15379018</td>
+<td>-86.53875008</td>
+</tr>
+
+
+
+<tr>
+<td>902365100</td>
+<td>2015</td>
+<td>1</td>
+<td>7</td>
+<td>Weekend</td>
+<td>1500</td>
+<td>2-Car</td>
+<td>No injury/unknown</td>
+<td>FOLLOWING TOO CLOSELY</td>
+<td>SOUTH WALNUT & SOUTH WALNUT STREET</td>
+<td>39.107344</td>
+<td>-86.53875008</td>
+</tr>
+
+<tr>
+<td>902365193</td>
+<td>2015</td>
+<td>1</td>
+<td>1</td>
+<td>Weekend</td>
+<td>1800</td>
+<td>1-Car</td>
+<td>No injury/unknown</td>
+<td>FOLLOWING TOO CLOSELY</td>
+<td>17TH & MONROE</td>
+<td>39.107344</td>
+<td>-86.53875008</td>
+</tr>
+
+<tr>
+<td>902365241</td>
+<td>2015</td>
+<td>1</td>
+<td>1</td>
+<td>Weekend</td>
+<td>1800</td>
+<td>2-Car</td>
+<td>No injury/unknown</td>
+<td>FOLLOWING TOO CLOSELY</td>
+<td>ARLINGTON & MONROE</td>
+<td>39.179248</td>
+<td>-86.547104</td>
+</tr>
+
+
+<tr>
+<td>902365255</td>
+<td>2015</td>
+<td>1</td>
+<td>1</td>
+<td>Weekend</td>
+<td>1600</td>
+<td>2-Car</td>
+<td>No injury/unknown</td>
+<td>FOLLOWING TOO CLOSELY</td>
+<td>NORTH GRANT</td>
+<td>39.17830276</td>
+<td>-86.52934265</td>
+</tr>
+
+        </table>
+    </div>
+
+    <div id="TurnAroundModel_data" style="margin-left:30px">
+        <p>
+            There are 165 schools in total across different states that are ready to implement Turnaround Model.
+            Out of them California state has highest number of schools - 28, and South Dakota, Nebraska, New Mexico
+            have only 1 school that is ready to implement the turnaround model.
+        </p>
+        <p>
+            All the schools in Turnaround Model are granted a total of around $65 million funds and with an average of $394 thousand.
+        </p>
+    </div>
+
+   
+    <div id="RestartModel" style="margin-top:20px;list-style-type: none;">
+        <li>
+            <a href="#RestartModel">
+                <h3 class="RestartTitle">
+                    2. Restart Model
+                </h3>
+            </a>
+        </li>
+        <div id="RestartModel_intro" style="margin-left:30px">
+            <h3 class="table-title"> RestartModel Data</h3>
+            <p>
+
+                If a school is ready to implement "Restart Model" to receive funds, then it has to
+                convert a school or close it and re-open it as a charter school or
+                under an education management organization.
+            </p>
+        </div>
+        <div id="RestartModel_data" style="margin-left:30px">
+            <p>
+                There are 33 schools in total across different states that are ready to implement Restart Model.
+                Out of them Pennsylvania state has highest number of schools - 7, and 6 states (Alaska, Colorado, Connecticut,
+                Illinois, North Carolina, New Jersey)
+                have only 1 school that is ready to implement the Restart model.
+            </p>
+            <p>
+                All the schools in Restart Model are granted a total of around $16 million funds and with an average of $503 thousand.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
